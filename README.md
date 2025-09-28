@@ -199,10 +199,6 @@ The frontend will start on `http://localhost:3000`
 - Ensure proper indexing on frequently queried fields
 - Consider data validation and constraints
 
-## 📄 License
-
-This project is open source and available under the [MIT License](LICENSE).
-
 ## 🤝 Contributing
 
 1. Fork the repository
@@ -210,11 +206,3 @@ This project is open source and available under the [MIT License](LICENSE).
 3. Commit your changes (`git commit -m 'Add some amazing feature'`)
 4. Push to the branch (`git push origin feature/amazing-feature`)
 5. Open a Pull Request
-
-## 📞 Support
-
-If you have any questions or need help with the project, please open an issue in the GitHub repository.
-
----
-
-**Happy Coding! 🎬✨**
