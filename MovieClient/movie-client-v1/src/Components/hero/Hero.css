@@ -1,0 +1,85 @@
+  .movie-carousel-container{
+    width: 100vw;
+    height: 100vh;
+    background-color: black;
+  }
+  .movie-poster{
+    height: 300px;
+    border: 1px solid gold;
+    border-radius: 10px;
+    overflow: hidden;
+  }
+  .movie-poster > img{
+    height: 100%;
+    width: 100%;
+  }
+  .movie-card-container{
+    height: 100vh;
+    background-color: black;
+  }
+  .movie-card{
+    position: relative;
+    height: 100%;
+    width: 100%;
+    /* Backdrop image + dark gradient overlay */
+    background-image: var(--img), linear-gradient(to bottom, rgba(0,0,0,0), rgba(0,0,0,0.7));
+    background-size: 100% 100%, 100% 100%;
+    background-position: center center, center center;
+    background-repeat: no-repeat, no-repeat;
+  }
+  .movie-detail{
+    position: absolute;
+    top: 200px;
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+  }
+
+  .swiper-button-prev,
+  .swiper-button-next{
+    opacity: 0;
+    transition: opacity 200ms ease;
+    color: #fff; /* arrow color */
+  }
+  .movie-carousel-container:hover .swiper-button-prev,
+  .movie-carousel-container:hover .swiper-button-next{
+    opacity: 1;
+  }
+  .movie-title{
+    color: white;
+    display: flex;
+    align-items: center;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+  }
+  .movie-buttons-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 300px;
+  }
+  .play-button-icon-container{
+    padding: 0px;
+    margin: 0px;
+    width: 150px;
+  }
+  .play-button-icon{
+    padding: 0px;
+    margin: 0px;
+    color: gold;
+    font-size: 3rem;
+    transition: 0.3s;
+    cursor: pointer;
+  }
+  .play-button-icon:hover{
+    font-size: 4rem;
+    color: white;
+  }
+
+  @media only screen and (max-width: 800px){
+    .movie-detail{
+        flex-direction: column;
+        align-items: center;
+        top: 20px;
+    }
+  }
+
